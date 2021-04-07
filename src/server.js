@@ -1,9 +1,6 @@
 'use strict'
 const http = require('http'),
-      express = require('express'),
-      app = express();
-
-app.set('PORT', 3001);
+      app = require('./app/app');
 
 const server = http.createServer(app);
 
