@@ -1,0 +1,25 @@
+{
+  "name": "routing_express_node",
+  "version": "1.0.0",
+  "description": "This practice its about the use of routing in ExpressJS and NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Craken420/Routing_Express_Node.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "ExpressJS"
+  ],
+  "author": "Luis Angel Peña Zuñiga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Craken420/Routing_Express_Node/issues"
+  },
+  "homepage": "https://github.com/Craken420/Routing_Express_Node#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
