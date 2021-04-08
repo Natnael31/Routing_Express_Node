@@ -12,11 +12,11 @@ GET http://localhost:3001/api/greet
 
 # 1)
 ###
-GET http://localhost:3001/api/user/1/todo/1
+GET http://localhost:3001/api/user/606e04ddf5e43646585ae761/todo/1
 
 # 2)
 ###
-GET http://localhost:3001/api/user/4255
+GET http://localhost:3001/api/user/606e04ddf5e43646585ae761
 
 # 3)
 ###
@@ -28,10 +28,13 @@ GET http://localhost:3001/api/user/lol-lolesimo
 
 # 5)
 ###
-GET http://localhost:3001/api/user/1.Pass
+GET http://localhost:3001/api/user/606e04ddf5e43646585ae761.Pass
 
-# 6)
+# 7)
 ###
-GET http://localhost:3001/api/user/1.Pass/todo/1
+GET http://localhost:3001/api/user/
 
-
+# Callback triggers para enrutar parametros
+# 1)
+###
+GET http://localhost:3001/api/trigger/user/606e04ddf5e43646585ae761

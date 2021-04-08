@@ -9,17 +9,22 @@
 const router = require('express').Router(); // exportar routas y usarlas como middleware
 
 const Ctrl = require('../controllers/controllers');
+const meaddlewares = require('../meaddlewares/middlewares');
 
-/* Routes */
-router.get('/', Ctrl.greet); // Normal route
-router.route('/greet').get(Ctrl.greet)  // Route method
+/* Rutas basicas */
+router.get('/', Ctrl.greet); // normal route
+router.route('/greet').get(Ctrl.greet);  // route method
 
 /* Parametros */
-router.route('/user/:userId/todo/:todoId').get(Ctrl.showParams)
-router.route('/user/:userId(\\d+)').get(Ctrl.showParams)
-router.route('/flights/:from-:to').get(Ctrl.showParams)
-router.route('/user/:user-:pass').get(Ctrl.showParams)
-router.route('/user/:userId.:userPass').get(Ctrl.showParams)
-router.route('/user/:userId.:userPass/todo/:todoId').get(Ctrl.showParams)
+router.route('/user/:userId/todo/:todoId').get(Ctrl.showParams);
+router.route('/user/:userId([A-Za-z\\d]+)').get(Ctrl.showParams);
+router.route('/flights/:from-:to').get(Ctrl.showParams);
+router.route('/user/:user-:pass').get(Ctrl.showParams);
+router.route('/user/:userId.:userPass').get(Ctrl.showParams);
+router.route('/user').get(Ctrl.getUsers);
+
+/* Callback triggers para enrutar parametros */
+router.param('userId', meaddlewares.enrouteUser)
+router.route('/trigger/user/:userId').get(Ctrl.showUserReq);
 
 module.exports = router;
