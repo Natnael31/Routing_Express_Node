@@ -30,12 +30,11 @@ GET http://localhost:3001/api/user/lol-lolesimo
 ###
 GET http://localhost:3001/api/user/606e04ddf5e43646585ae761.Pass
 
-# 7)
+# 6)
 ###
 GET http://localhost:3001/api/user/
 
 # Callback triggers para enrutar parametros
-# 1)
 ###
 GET http://localhost:3001/api/trigger/user/606e04ddf5e43646585ae761
 
@@ -47,3 +46,7 @@ GET http://localhost:3001/api/twoHandlers
 # 2)
 ###
 GET http://localhost:3001/api/arrayHandlers
+
+# APIRouting
+###
+GET http://localhost:3001/api/showMeaddleware
