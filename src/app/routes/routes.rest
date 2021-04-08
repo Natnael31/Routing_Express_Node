@@ -38,3 +38,12 @@ GET http://localhost:3001/api/user/
 # 1)
 ###
 GET http://localhost:3001/api/trigger/user/606e04ddf5e43646585ae761
+
+# Manejadores de rutas
+# 1)
+###
+GET http://localhost:3001/api/twoHandlers
+
+# 2)
+###
+GET http://localhost:3001/api/arrayHandlers

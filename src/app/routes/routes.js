@@ -27,4 +27,12 @@ router.route('/user').get(Ctrl.getUsers);
 router.param('userId', meaddlewares.enrouteUser)
 router.route('/trigger/user/:userId').get(Ctrl.showUserReq);
 
+/* Controladores de ruta */
+router.get('/twoHandlers', function (req, res, next) {
+	console.log('Handler 1: the response will be sent by the next function ...');
+	next();
+}, Ctrl.greet );
+
+router.get('/arrayHandlers', [meaddlewares.saySomething, meaddlewares.showMethodNUrl, Ctrl.greet])
+
 module.exports = router;
