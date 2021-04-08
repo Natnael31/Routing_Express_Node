@@ -7,7 +7,9 @@ const Ctrl = {
         await User.find( (err, users) =>
             (err) ? res.status(500).send(err) : res.status(300).send(users) )
     },
-    showUserReq: async (req, res) =>  res.status(300).send(req.user)
+    showUserReq: async (req, res) =>  res.status(300).send(req.user),
+    toFloatValid: (id) => !isNaN(parseFloat(id)) && isFinite(id)
+    
 };
 
 module.exports = Ctrl;

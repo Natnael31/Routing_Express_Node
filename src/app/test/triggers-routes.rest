@@ -1,3 +1,13 @@
 # Callback triggers para enrutar parametros
+
+# 1)
 ###
 GET http://localhost:3001/api/trigger/user/606e04ddf5e43646585ae761
+
+# 2)
+###
+GET http://localhost:3001/api/trigger/606e04ddf5e43646585ae761
+
+# 3)
+###
+GET http://localhost:3001/api/trigger/candidate/606e04

@@ -13,7 +13,10 @@ app.set('PORT', 3001);
 // Distincts routers with same path
 app.use('/api', basic_paramsRouter);
 app.use('/api', callbacks_handlersRouter);
+app.use('/api', triggerRouter.routerTrigg1);
+app.use('/api', triggerRouter.routerTrigg2);
+app.use('/api', triggerRouter.routerTrigg3);
 app.use('/api', api_regexRouter);
-app.use('/api', triggerRouter);
+
 
 module.exports = app;
