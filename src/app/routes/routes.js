@@ -35,8 +35,11 @@ router.get('/twoHandlers', function (req, res, next) {
 
 router.get('/arrayHandlers', [meaddlewares.saySomething, meaddlewares.showMethodNUrl, Ctrl.greet])
 
-// Router API: instancia aislada de middleware y rutas (mini-aplicación)
+/* Router API: instancia aislada de middleware y rutas (mini-aplicación) */
 router.use(meaddlewares.showMethodNUrl);
-router.get('/showMeaddleware', Ctrl.greet)
+router.get('/showMeaddleware', Ctrl.greet);
+
+/* Expresiones regulares */
+router.route(/.*fly$/).get( (req, res) => res.send('/.*fly$/') )
 
 module.exports = router;

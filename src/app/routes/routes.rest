@@ -50,3 +50,9 @@ GET http://localhost:3001/api/arrayHandlers
 # APIRouting
 ###
 GET http://localhost:3001/api/showMeaddleware
+
+# Expresiones regulares
+###
+GET http://localhost:3001/api/fly
+###
+GET http://localhost:3001/api/butterfly
