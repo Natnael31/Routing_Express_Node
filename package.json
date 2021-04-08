@@ -22,7 +22,8 @@
   "homepage": "https://github.com/Craken420/Routing_Express_Node#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "http": "0.0.1-security"
+    "http": "0.0.1-security",
+    "mongoose": "^5.12.3"
   },
   "devDependencies": {
     "morgan": "^1.10.0",

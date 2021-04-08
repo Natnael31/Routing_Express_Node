@@ -1,0 +1,8 @@
+# Manejadores de rutas
+# 1)
+###
+GET http://localhost:3001/api/twoHandlers
+
+# 2)
+###
+GET http://localhost:3001/api/arrayHandlers
