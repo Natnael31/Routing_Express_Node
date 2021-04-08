@@ -42,4 +42,18 @@ router.get('/showMeaddleware', Ctrl.greet);
 /* Expresiones regulares */
 router.route(/.*fly$/).get( (req, res) => res.send('/.*fly$/') )
 
+/*
+Métodos de respuesta:
+	res.download()    Devuelve archivo para ser descargado.
+	res.end()         Finaliza el proceso de respuesta.
+	res.json()        Devuelve JSON.
+	res.jsonp()       Devuelve JSON que soporta JSONP.
+	res.redirect()    Redirecciona la solicitud.
+	res.render()      Renderiza una plantilla de página.
+	res.send()        Devuelve una respuesta que puede ser de varios tipos.
+	res.sendFile()    Envía un archivo en forma de flujo octet.
+	res.sendStatus()  Formatea el estado de la respuesta y lo envía en el cuerpo de la misma.
+	router.all('*', requireAuthentication, loadUser)
+*/
+
 module.exports = router;
